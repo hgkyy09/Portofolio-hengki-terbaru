@@ -1,13 +1,16 @@
 {
   "name": "portofolio-v5",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "homepage": "https://hgkyy09.github.io/Portofolio-hengki-terbaru",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
@@ -22,4 +25,4 @@
     "@shadcn/ui": "^0.0.4",
     "@splinetool/react-spline": "^4.0.0",
     "@splinetool/runtime": "^1.9.37",
-    "@s
+    "@supabase/supabase-js": "^2.49.9
